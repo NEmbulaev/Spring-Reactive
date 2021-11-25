@@ -1,0 +1,44 @@
+GET http://localhost:8081/person
+Accept: application/json
+
+###
+POST http://localhost:8081/persons
+Content-Type: application/json
+
+{"name":"Vasya", "surname":"Poupkin"}
+
+###
+
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{"name":"Sasha", "surname":"Poushkine"}
+###
+
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{"name":"Misha", "surname":"Lermontov"}
+
+###
+
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{"name":"Joseph", "surname":"Brodsky"}
+
+###
+
+GET http://localhost:8080/person/all
+
+###
+
+GET http://localhost:8080/person?start=1
+
+###
+
+GET http://localhost:8080/person/names?count=10
+
+###
+
+GET http://localhost:8080/person/stream
